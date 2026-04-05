@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<style>
+
+*{
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin:0;
+  display:flex;
+  height:100vh;
+}
+
+/* LEFT IMAGE */
+.left{
+  width:40%;
+  background-image:url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+/* RIGHT SIDE */
+.right{
+  width:60%;
+  background:#f3f3f3;
+  display:flex;
+  flex-direction:column;
+}
+
+.top-text{
+  padding:40px;
+  background:#e9e9e9;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.form-section{
+  padding:40px;
+  background:white;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+label{
+  font-size:12px;
+  font-weight:bold;
+  color:#555;
+}
+
+input{
+  width:100%;
+  padding:8px;
+  border:1px solid #ccc;
+  border-radius:4px;
+}
+
+button{
+  margin-top:25px;
+  padding:12px 28px;
+  background:#596d48;
+  color:white;
+  border:none;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#445536;
+}
+
+.login{
+  padding:20px 40px;
+}
+
+.login a{
+  color:#596d48;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="left">
+</div>
+
+<div class="right">
+
+  <div class="top-text">
+    <p>
+      This is not a real online service! You know you need something like this
+      in your life to help you realize your deepest dreams.
+      Sign up now to get started.
+    </p>
+    <p><strong>You know you want to.</strong></p>
+  </div>
+
+  <div class="form-section">
+
+    <h3>Let's do this!</h3>
+
+    <div class="form-grid">
+
+      <div>
+        <label>FIRST NAME</label>
+        <input type="text" placeholder="Thor">
+      </div>
+
+      <div>
+        <label>LAST NAME</label>
+        <input type="text" placeholder="Odinson">
+      </div>
+
+      <div>
+        <label>EMAIL</label>
+        <input type="email">
+      </div>
+
+      <div>
+        <label>PHONE NUMBER</label>
+        <input type="tel">
+      </div>
+
+      <div>
+        <label>PASSWORD</label>
+        <input type="password">
+      </div>
+
+      <div>
+        <label>CONFIRM PASSWORD</label>
+        <input type="password">
+      </div>
+
+    </div>
+
+    <button>Create Account</button>
+
+  </div>
+
+  <div class="login">
+    Already have an account? <a href="#">Log in</a>
+  </div>
+
+</div>
+
+</body>
+</html>
