@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+display:grid;
+grid-template-columns:260px 1fr;
+height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+background:#1992d4;
+color:white;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.sidebar h2{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.menu{
+list-style:none;
+display:flex;
+flex-direction:column;
+gap:15px;
+font-weight:600;
+}
+
+/* MAIN */
+
+.main{
+display:grid;
+grid-template-rows:120px 1fr;
+background:#e2e8f0;
+}
+
+/* HEADER */
+
+.header{
+background:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap:15px;
+padding:20px 40px;
+box-shadow:0 3px 5px rgba(0,0,0,0.1);
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.search{
+background:#e2e8f0;
+height:30px;
+width:500px;
+border-radius:20px;
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:15px;
+font-weight:bold;
+}
+
+.bottom{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.welcome{
+display:flex;
+align-items:center;
+gap:15px;
+font-weight:bold;
+}
+
+.buttons button{
+background:#1992d4;
+border:none;
+color:white;
+padding:10px 25px;
+border-radius:20px;
+margin-left:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* CONTENT */
+
+.content{
+display:grid;
+grid-template-columns:3fr 1fr;
+gap:20px;
+padding:20px;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-left:8px solid #f0b429;
+border-radius:8px;
+box-shadow:2px 2px 6px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.icons{
+display:flex;
+gap:15px;
+justify-content:flex-end;
+margin-top:20px;
+}
+
+/* RIGHT PANEL */
+
+.right{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.box{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.trending-item{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:10px;
+}
+
+.avatar{
+width:35px;
+height:35px;
+background:#ddd;
+border-radius:50%;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2><i class="fa-solid fa-table-cells-large"></i> Dashboard</h2>
+
+<ul class="menu">
+<li><i class="fa-solid fa-house"></i> Home</li>
+<li><i class="fa-solid fa-user"></i> Profile</li>
+<li><i class="fa-solid fa-message"></i> Messages</li>
+<li><i class="fa-solid fa-clock"></i> History</li>
+<li><i class="fa-solid fa-list-check"></i> Tasks</li>
+<li><i class="fa-solid fa-users"></i> Communities</li>
+
+<br>
+
+<li><i class="fa-solid fa-gear"></i> Settings</li>
+<li><i class="fa-solid fa-circle-question"></i> Support</li>
+<li><i class="fa-solid fa-shield"></i> Privacy</li>
+</ul>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div class="top">
+
+<div class="search"></div>
+
+<div class="profile">
+<i class="fa-solid fa-bell"></i>
+<div class="avatar"></div>
+Morgan Oakley
+</div>
+
+</div>
+
+<div class="bottom">
+
+<div class="welcome">
+<div class="avatar"></div>
+<div>
+<p>Hi there,</p>
+<h3>Morgan Oakley (@morgan)</h3>
+</div>
+</div>
+
+<div class="buttons">
+<button>Inscripción</button>
+<button>Subscribes</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="content">
+
+<div class="projects">
+
+<div class="card">
+<h3>Super Cool Project</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="icons">
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-eye"></i>
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+</div>
+
+<div class="card">
+<h3>Less Cool Project</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="icons">
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-eye"></i>
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+</div>
+
+<div class="card">
+<h3>Impossible App</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="icons">
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-eye"></i>
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+</div>
+
+<div class="card">
+<h3>Easy Peasy App</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="icons">
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-eye"></i>
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+</div>
+
+<div class="card">
+<h3>Ad Blocker</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="icons">
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-eye"></i>
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+</div>
+
+<div class="card">
+<h3>Money Maker</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="icons">
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-eye"></i>
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="box">
+<h3>Announcements</h3>
+<p>Site Maintenance</p>
+<hr>
+<p>Community Share Day</p>
+<hr>
+<p>Updated Privacy Policy</p>
+</div>
+
+<div class="box">
+<h3>Trending</h3>
+
+<div class="trending-item">
+<div class="avatar"></div>
+@tegan
+</div>
+
+<div class="trending-item">
+<div class="avatar"></div>
+@morgan
+</div>
+
+<div class="trending-item">
+<div class="avatar"></div>
+@kendall
+</div>
+
+<div class="trending-item">
+<div class="avatar"></div>
+@alex
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
