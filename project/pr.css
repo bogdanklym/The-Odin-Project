@@ -1,0 +1,140 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+padding:40px;
+text-align:center;
+}
+
+/* Title */
+
+h1{
+margin-bottom:20px;
+}
+
+/* Button */
+
+#newBookBtn{
+background:#4CAF50;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+margin-bottom:25px;
+transition:0.2s;
+}
+
+#newBookBtn:hover{
+background:#45a049;
+}
+
+/* Library grid */
+
+#library{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+/* Book card */
+
+.book{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.2s;
+}
+
+.book:hover{
+transform:translateY(-4px);
+}
+
+.book h3{
+margin-bottom:10px;
+}
+
+.book p{
+margin:5px 0;
+color:#555;
+}
+
+/* Buttons inside card */
+
+.book button{
+margin-top:8px;
+margin-right:5px;
+border:none;
+padding:8px 10px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+}
+
+.toggle{
+background:#2196F3;
+color:white;
+}
+
+.delete{
+background:#f44336;
+color:white;
+}
+
+.toggle:hover{
+background:#1e88e5;
+}
+
+.delete:hover{
+background:#e53935;
+}
+
+/* Dialog */
+
+dialog{
+border:none;
+border-radius:10px;
+padding:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Form */
+
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+width:250px;
+}
+
+input{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+form button{
+padding:10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+form button[type="submit"]{
+background:#4CAF50;
+color:white;
+}
+
+#closeDialog{
+background:#999;
+color:white;
+}

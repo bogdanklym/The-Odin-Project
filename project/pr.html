@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>My Library</title>
+<link rel="stylesheet" href="pr.css">
+</head>
+
+<body>
+
+<h1>Мy Library</h1>
+
+<button id="newBookBtn">New Book</button>
+
+<dialog id="bookDialog">
+<form id="bookForm">
+
+<input type="text" id="title" placeholder="Name" required>
+<input type="text" id="author" placeholder="Author" required>
+<input type="number" id="pages" placeholder="Number of pages" required>
+
+<label>
+Read
+<input type="checkbox" id="read">
+</label>
+
+<button type="submit">Add</button>
+<button type="button" id="closeDialog">Close</button>
+
+</form>
+</dialog>
+
+<div id="library"></div>
+
+<script src="pr.js"></script>
+
+</body>
+</html>
